@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
             AudioAttributes audioAttributes = new AudioAttributes.Builder().setUsage(AudioAttributes.USAGE_ALARM).build();
             mSoundPool = new SoundPool.Builder().setMaxStreams(1).setAudioAttributes(audioAttributes).build();
         }
-        mSoundResId = mSoundPool.load(this, (Integer) R.raw,1);
+        mSoundResId = mSoundPool.load(this, (Integer) R.raw.bellsound,1);
     }
 
     @Override
